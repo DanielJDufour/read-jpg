@@ -10,7 +10,7 @@ npm install read-jpg
 ```js
 import readJPG from 'read-jpg';
 
-const result = readJPG({ data: arrayBuffer });
+const result = await readJPG({ data: arrayBuffer });
 // result is { height: 200, width: 100, pixels: [[[...]]] }
 ```
 
@@ -18,5 +18,5 @@ const result = readJPG({ data: arrayBuffer });
 ```js
 const readJPG = require("read-jpg");
 
-const result = readJPG({ data: buffer });
+const result = await readJPG({ data: buffer });
 ```
